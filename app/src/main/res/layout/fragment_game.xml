@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="false">
+
+    <TextView
+        android:id="@+id/tvScoreBoard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/score_margin_top"
+        android:textColor="@color/black"
+        android:textSize="@dimen/score_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="0 : 0" />
+
+    <TextView
+        android:id="@+id/tvTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_timer"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/timer_text_size"
+        app:layout_constraintEnd_toEndOf="@+id/tvScoreBoard"
+        app:layout_constraintStart_toStartOf="@+id/tvScoreBoard"
+        app:layout_constraintTop_toBottomOf="@+id/tvScoreBoard"
+        tools:text="00m: 00s" />
+
+    <TextView
+        android:id="@+id/tvTeamOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_main"
+        android:layout_marginTop="@dimen/margin_main"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTimer"
+        tools:text="TEAM ONE" />
+
+    <TextView
+        android:id="@+id/tvTeamTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/score_margin_top"
+        app:layout_constraintStart_toStartOf="@+id/tvTeamOne"
+        app:layout_constraintTop_toBottomOf="@+id/tvTeamOne"
+        tools:text="TEAM TWO" />
+
+    <TextView
+        android:id="@+id/tvIncreaseTeamOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_increase"
+        android:textColor="@color/purple_700"
+        android:textSize="@dimen/increase_text_size"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTeamOne"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvTeamOne"
+        app:layout_constraintTop_toTopOf="@+id/tvTeamOne" />
+
+    <TextView
+        android:id="@+id/tvIncreaseTeamTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/text_increase"
+        android:textColor="@color/purple_700"
+        android:textSize="@dimen/increase_text_size"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTeamTwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvTeamTwo"
+        app:layout_constraintTop_toTopOf="@+id/tvTeamTwo" />
+
+    <Button
+        android:id="@+id/tvCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_cancel"
+        app:layout_constraintBottom_toBottomOf="@+id/tvFinish"
+        app:layout_constraintEnd_toStartOf="@+id/tvFinish"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/tvFinish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_bottom_finish"
+        android:text="@string/button_finish"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvCancel" />
+</androidx.constraintlayout.widget.ConstraintLayout>

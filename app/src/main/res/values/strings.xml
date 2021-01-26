@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">GameProject</string>
+    <string name="start">Start Game</string>
+    <string name="team_1">Team 1</string>
+    <string name="team_2">Team 2</string>
+    <string name="timer_hint">Seconds</string>
+    <string name="best_team_scores">Best Team Scores</string>
+    <string name="error_et_text">Enter correct data</string>
+    <string name="text_increase">+</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_finish">Finish</string>
+    <string name="score_board">%d : %d</string>
+    <string name="timer_text">%sm: %ss</string>
+    <string name="share_result">Share</string>
+    <string name="to_main_screen">Main screen</string>
+    <string name="share_message_string">%s vs %s - %d:%d</string>
+    <string name="share_with_friends">Share with friends</string>
+    <string name="reset">Reset</string>
+    <string name="same_team_names">Team names can\'t be equal</string>
+    <string name="wrong_number_format">Wrong number format</string>
+
+</resources>
